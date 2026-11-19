@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gautam Stock Learner</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #111111;
+    --muted: #8a8a8a;
+    --accent: #0088cc;
+    --accent-dark: #0077b3;
+    --box-bg: #f8f8f8;
+    --box-border: #e2e2e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417;
+      --text: #f1f1f1;
+      --muted: #9aa0a6;
+      --box-bg: #1b1e22;
+      --box-border: #2c3035;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Roboto", "Noto Sans Devanagari", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 28px 16px 24px;
+  }
+  main { width: 100%; max-width: 400px; text-align: center; }
+  .avatar {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px;
+    background: #ddd;
+  }
+  h1 { font-size: 1.6rem; font-weight: 600; letter-spacing: -0.5px; line-height: 1.1; }
+  h1 sup { font-size: 0.6rem; font-weight: 400; vertical-align: super; margin-left: 2px; }
+  .subs { color: var(--muted); font-size: 0.9rem; margin: 8px 0 14px; }
+  .tagline p { font-size: 0.95rem; line-height: 1.5; margin-bottom: 8px; }
+  .divider { width: 70px; height: 3px; background: var(--accent); border-radius: 2px; margin: 18px auto; }
+  h2 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+  .about { font-size: 0.9rem; line-height: 1.7; }
+  .notice {
+    background: var(--box-bg);
+    border: 1px solid var(--box-border);
+    border-radius: 14px;
+    padding: 12px 14px;
+    margin: 18px 0;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+  .join {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 12px 52px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(0, 136, 204, 0.3);
+    transition: background .2s, transform .1s;
+  }
+  .join:hover { background: var(--accent-dark); }
+  .join:active { transform: scale(.97); }
+  .join:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+  .hint { color: var(--muted); font-size: 0.8rem; margin-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <!-- Apni photo ka path yahan daalo -->
+  <img class="avatar" src="profile.jpg" alt="Gautam">
+
+  <h1>Gautam Stock learner<sup>™</sup></h1>
+  <p class="subs">3 217 subscribers</p>
+
+  <div class="tagline">
+    <p>Learn From Our Real Trades 📊📈💹</p>
+    <p>Sharing Index &amp; Stock Option Strategies.</p>
+    <p>We Share Our Personal Trade For Educational Purpose</p>
+    <p>We Are Not SEBI Registered.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2>हमारा उद्देश्य</h2>
+  <p class="about">
+    इस कम्युनिटी में ट्रेडिंग और मार्केट से जुड़ी जानकारी, सीखने के लिए उपयोगी अपडेट और सामान्य शैक्षिक सामग्री साझा की जाती है। अगर आप इस विषय में रुचि रखते हैं, तभी नीचे दिए गए बटन से Telegram चैनल जॉइन करें।
+  </p>
+
+  <div class="notice">
+    कृपया केवल तभी Join करें जब आप वास्तव में इस कम्युनिटी की सामग्री देखना चाहते हों। कोई भी वित्तीय निर्णय लेने से पहले स्वयं उचित जानकारी और सलाह प्राप्त करें।
+  </div>
+
+  <!-- Apna Telegram channel link yahan daalo -->
+  <a class="join" href="https://t.me/YOUR_CHANNEL" target="_blank" rel="noopener">JOIN CHANNEL</a>
+  <p class="hint">Telegram चैनल में शामिल होने के लिए क्लिक करें</p>
+</main>
+</body>
+</html>
